@@ -1,0 +1,10 @@
+<app-list-navbar class="app-navbar"></app-list-navbar>
+<div class="app-body">
+  <h1>Playground</h1>
+  <app-users-list
+    [userData]="userData"
+    (removeFunctionEvent)="removeFunction($event)"
+    (sortFunctionEvent)="sortFunction($event)"
+    (submitNewUserEvent)="submitNewUser($event)"
+  ></app-users-list>
+</div>

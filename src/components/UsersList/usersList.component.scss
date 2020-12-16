@@ -1,0 +1,60 @@
+:host {
+  letter-spacing: 1px;
+}
+
+.option-button {
+  letter-spacing: 1px;
+  padding: 10px 5px;
+  margin: 0 2px;
+}
+
+.user-list-container-options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-user {
+  padding: 20px 0;
+  margin: 25px 0 50px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+.input-text {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.input-number {
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.remove-button {
+  border-radius: 20px;
+  border: 1px solid red;
+  color: red;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-top: 10px;
+  padding-bottom: 3px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}

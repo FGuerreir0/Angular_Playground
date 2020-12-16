@@ -1,0 +1,44 @@
+<div class="user-list-container-options">
+  <button (click)="sortFunctionEvent.emit('name')" class="option-button">
+    Sort by Name
+  </button>
+  <button (click)="sortFunctionEvent.emit('age')" class="option-button">
+    Sort by Age
+  </button>
+</div>
+<div class="add-user">
+  <div>
+    <label>Username: </label>
+    <input
+      class="input-text"
+      type="text"
+      [value]="newUserName"
+      (change)="newUserSubmission($event.target.value)"
+    /><br />
+  </div>
+  <div style="margin-top: 10px">
+    <label>Age: </label>
+    <input
+      class="input-number"
+      type="number"
+      step="1.0"
+      [value]="newAge"
+      (change)="newAgeSubmission($event.target.value)"
+    />
+  </div>
+  <button
+    (click)="submitNewUser()"
+    class="option-button"
+    style="margin-top: 15px"
+  >
+    Submit new User
+  </button>
+</div>
+<ul>
+  <li *ngFor="let user of userData">
+    {{ user.name }} has {{ user.age }} years old.
+    <button class="remove-button" (click)="removeFunctionEvent.emit(user.id)">
+      X
+    </button>
+  </li>
+</ul>
